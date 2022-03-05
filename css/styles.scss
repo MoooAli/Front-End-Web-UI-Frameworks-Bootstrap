@@ -2,7 +2,6 @@ $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
-$text-fw: floralwhite;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -10,6 +9,22 @@ $carousel-item-height: 300px;
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
+}
+
+.modal-header{
+    background-color: $background-dark;
+
+    .modal-title{
+        color:floralwhite;
+    }
+
+    .close{
+        color:floralwhite;
+    }
+}
+
+.modal-body{
+    background-color: $background-light;
 }
 
 .row-header{
@@ -30,7 +45,7 @@ $carousel-item-height: 300px;
 .jumbotron {
     @include zero-margin(70px,30px);
     background: $background-light ;
-    color: $text-fw;
+    color:floralwhite;
 }
 
 address{
@@ -76,14 +91,3 @@ body{
     z-index: 1;
 }
 
-.modal-header{
-	background: $background-dark;
-	color: $text-fw;
-	.close{
-		color: $text-fw;
-	}
-}
-
-.modal-body{
-	background: $background-pale;
-}
